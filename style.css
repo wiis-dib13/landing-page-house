@@ -314,7 +314,7 @@ header nav ul li button:hover{
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    background-color:#fffbf7;
+    background-color:#ffffff;
     backdrop-filter: blur(8px);
     padding: 0.5rem;
     width: 100%;
@@ -328,25 +328,341 @@ header nav ul li button:hover{
     margin-bottom: 1rem;
 }
 
-.partie3 .services{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-left: 2rem;
+.service{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff5d6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 .service h3{
     color: #000000;
 }
 .service p{
     color: #888888;
+    font-weight: normal;
 }
 .fa-solid {
   position: relative;
-  left: 6rem;
-  bottom: 0.5rem;
+  left: 14rem;
+  bottom: -0.5rem;
   color: #ff8a00;
   font-size: 1.5rem;
 }
+
+.service:hover{
+    transform: translateY(-10px);
+}
+
+/*partie 4 */
+    .partie4{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        .partie4 h2{
+            margin-left: 5rem;
+            color: #333;
+            font-weight: bold;
+            margin-top: 3rem;
+        }
+        .partie4 h2::after{
+            content: '';
+            display: block;
+            width: 150px;
+            height: 4px;
+            background-color: #ff8a00;
+            margin-top: 0.5rem;
+        }
+        .partie4 .faq{
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 2rem;
+            backdrop-filter: blur(8px);
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1rem;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 1rem 0;
+        }
+        
+        .partie4 h3{
+            color: #2f2f2f;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0;
+            flex: 1;
+        }
+        .partie4 button{
+            background-color: transparent;
+            border: 2px solid #ffd796;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ff8a00;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .partie4 button:hover{
+            background-color: #ff8a00;
+            color: #ffffff;
+        }
+        
+        .faq-answer{
+            margin: 1rem 0;
+            color: #2f2f2f;
+            font-size: 1rem;
+            font-weight: normal;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 1rem;
+            border-radius: 1rem;
+            display: none;
+            line-height: 1.6;
+        }
+
+
+/*partie 5 */
+.partie5{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.partie5 h2{
+    margin-left: 5rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.partie5 h2::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #ff8a00;
+    margin-top: 0.5rem;
+}
+.partie5 p{
+    margin-left: 2rem;
+    color: #2f2f2f;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+    padding: 0.5rem;
+}
+.partie5 .subscription{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 5rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(8px);
+}
+.partie5 .subscription input, .partie5 .subscription textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.partie5 .subscription button{
+    padding: 0.75rem;
+    background-color: #ff8a00;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.partie5 .subscription button:hover{
+    background-color: #e67600;
+}
+
+/*partie 6 */
+.partie6{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #171717;
+    filter: blur(0.5px);
+    color: #fff;
+    text-align: center;
+}
+.partie6 p{
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.partie6 footer{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    text-align: center;   
+}
+.partie6 footer i{
+    color: #ff8a00;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;   
+}
+#f {
+    position: relative;
+    left: 0rem;
+}
+/* responsive */
+@media (max-width: 768px){
+header{
+                height: auto;
+                min-height: 100vh;
+                padding: 1rem;
+            }
+            
+            header nav ul{
+                flex-direction: row;
+                align-items: center;
+                margin: 1rem;
+                gap: 1rem;
+            }
+            
+            header nav ul h1{
+                font-size: 1.2rem;
+                position: static;
+                margin-bottom: 1rem;
+            }
+            
+            header nav ul li a{
+                margin: 0.25rem 0;
+                font-size: 0.9rem;
+                color: #000;
+            }
+            
+            header nav ul li button{
+                position: static;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+            
+            .partie1{
+                flex-direction: column;
+                height: auto;
+                width: 95%;
+                padding: 2rem 1rem;
+                margin-top: 2rem;
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .header-content{
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+            
+            .header-content h1{
+                font-size: 2rem;
+                position: static;
+                margin-bottom: 1rem;
+                color: #ffffff;
+            }
+            
+            .header-content h2{
+                font-size: 1.5rem;
+                position: static;
+                margin-bottom: 1rem;
+                color: #ffffff;
+            }
+            
+            .header-content p{
+                font-size: 0.85rem;
+                position: static;
+               margin-top: 6rem;
+                white-space: normal;
+                max-width: 100%;
+                padding: 1rem;
+                text-align: center;
+            }
+            
+            .search-bar{
+                position: static;
+                flex-direction: column;
+                width: 100%;
+                margin: 2rem 0 0 0;
+                padding: 1.5rem;
+                gap: 1rem;
+            }
+            
+            .search-bar h3{
+                font-size: 1rem;
+                position: static;
+                margin: 0;
+                text-align: center;
+            }
+            
+            .search-bar p{
+                font-size: 0.8rem;
+                position: static;
+                margin: 0;
+                text-align: center;
+                white-space: normal;
+            }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .fa-regular.fa-heart{
+        position: relative;
+        left: 13rem;
+         bottom: 18rem;
+        font-size: 1.5rem;
+    }
+    header nav ul h1{
+        font-size: 1rem;
+        position: relative;
+        right : 0rem;
+    }
+    header nav ul li a{
+        margin-left: 1rem;
+        margin-top: 0.5rem; 
+    }
+    header nav ul li button{
+        position: relative;
+        left: 0rem; 
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
+    }
+    .partie3 .s > * {
+        width: calc(100% - 1rem);
+    }
+    .partie3 .fa-solid
+{
+    position: relative;
+    left: 0rem;
+    bottom: 0rem;
+    color: #ff8a00;
+    font-size: 1.5rem;
+
+}}
