@@ -99,7 +99,7 @@ header nav ul li button:hover{
     width: 80%;
     border: 1px solid #ccc;
     border-radius: 2rem;
-    background-image: url('./assets/p1.png');
+    background-image: url('./assets/p1.webp');
 }
 .header-content{
     flex: 1;
@@ -666,3 +666,4 @@ header{
     font-size: 1.5rem;
 
 }}
+
